@@ -1,0 +1,66 @@
+1. Encapsulation
+
+Encapsulation means keeping data private inside a class and accessing it using public methods.
+
+#include <iostream>
+using namespace std;
+
+class InstagramUser {
+private:
+    string password;
+
+public:
+    void setPassword(string p) {
+        password = p;
+    }
+
+    void showPassword() {
+        cout << "Password is protected" << endl;
+    }
+};
+
+int main() {
+    InstagramUser user;
+
+    user.setPassword("12345");
+    user.showPassword();
+
+    return 0;
+}
+
+Example: Instagram keeps your password private. You cannot directly access the password from outside the class.
+
+2. Abstraction
+
+Abstraction means showing only the important information and hiding the internal details.
+
+#include <iostream>
+using namespace std;
+
+class Instagram {
+public:
+    void uploadPhoto() {
+        cout << "Photo uploaded successfully!" << endl;
+    }
+};
+
+int main() {
+    Instagram app;
+
+    app.uploadPhoto();
+
+    return 0;
+}
+
+Example: When you click Upload Photo, Instagram uploads the photo. You don't need to know the internal process like server connection, image processing, or database storage.
+
+Difference
+
+Encapsulation: Hides and protects data	
+Abstraction: Hides implementation details
+
+Encapsulation: Achieved using private, public, etc.
+Abstraction: Achieved by showing only required functionality
+
+Encapsulation: Example: Protecting password
+Abstraction: Example: Uploading a photo without knowing the internal process

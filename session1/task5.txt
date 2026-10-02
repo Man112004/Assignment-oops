@@ -1,0 +1,9 @@
+Data Management
+C: Tasks were stored in a global array.
+OOP: A class stores and manages tasks together.
+Code Organization
+C: Code became less organized as more features were added.
+OOP: Classes and methods keep the code organized.
+Adding Features
+C: Adding new features required changing many parts of the code.
+OOP: Methods can be added or modified easily without affecting the whole program.
